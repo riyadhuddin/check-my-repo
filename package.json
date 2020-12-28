@@ -12,6 +12,9 @@
       "__tests__/__fixtures__",
       "__tests__/__mocks__",
       "__tests__/__snapshots__"
+    ],
+    "modulePathIgnorePatterns": [
+      "<rootDir>/dist/"
     ]
   },
   "repository": {
