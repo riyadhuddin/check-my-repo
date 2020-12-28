@@ -27,9 +27,9 @@ test('should return global all passed when there is no fail', () => {
 })
 
 test('should create organization directory, if it does not exists', async () => {
-  // if directory does not exists
+  /* if directory does not exists */
   fs.existsSync.mockReturnValue(false)
-  // call the function to test
+  /* call the function to test */
   await createJsonFile(repository, organization, results)
   expect(fs.promises.mkdir).toHaveBeenCalled()
   expect(fs.promises.writeFile).toHaveBeenCalledTimes(1)
