@@ -7,6 +7,8 @@ const fs = require('fs')
 jest.mock('fs')
 fs.promises = { mkdir: jest.fn(), writeFile: jest.fn() }
 
+  expect(log.mock.calls).toMatchSnapshot()
+})
 const repository = 'repository'
 const organization = 'organization'
 
